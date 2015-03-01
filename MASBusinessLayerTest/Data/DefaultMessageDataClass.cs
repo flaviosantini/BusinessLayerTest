@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Data
 {
-    public class DefaultMessageClass
+    public class DefaultMessageDataClass
     {
         public void Retrieve()
         {

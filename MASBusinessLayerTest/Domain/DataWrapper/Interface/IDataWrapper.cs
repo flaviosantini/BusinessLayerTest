@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace Domain.DataWrapper.Interface
 {
-    public class Class1
+    public interface IDataWrapper<T>
     {
+        IList<T> RetrieveList();
     }
 }

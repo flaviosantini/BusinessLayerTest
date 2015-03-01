@@ -39,8 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DataWrapper\Interface\IDataWrapper.cs" />
+    <Compile Include="DataWrapper\DefaultMessageDataWrapper.cs" />
+    <Compile Include="Entities\Message.cs" />
+    <Compile Include="Enums\DataTypes.cs" />
+    <Compile Include="Factories\DataTypeFactory\MessageDataTypeFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{6bb2d5ff-8af8-419d-891a-987d2cca25b2}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
